@@ -8,7 +8,7 @@ let etapas = [
                 nome: 'Vin Diesel do Py',
                 partido: 'PYP',
                 foto:[
-                    {url:'img/Vin Diesel.jpg', legenda: 'Vereador'}
+                    {url:'Vin Diesel.jpg', legenda: 'Vereador'}
                 ]
             },
             {
@@ -16,7 +16,7 @@ let etapas = [
                 nome: 'Zoio',
                 partido: 'BRZ',
                 foto:[
-                    {url:'img/Zoio.jpg', legenda: 'Vereador'}
+                    {url:'Zoio.jpg', legenda: 'Vereador'}
                 ]
             },
         ]
