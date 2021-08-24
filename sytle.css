@@ -149,4 +149,16 @@ body{
 .avisoGrande{
     font-size: 30px;
     font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avisoGigante{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

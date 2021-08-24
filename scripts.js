@@ -51,7 +51,12 @@ function atualizarInterface(){
     
     let fotosHtml ='';
         for(let i in candidato.foto){
+            if(candidato.foto[i].small){
+                fotosHtml += `<div class="d-1-image small"><img src="img/${candidato.foto[i].url}" alt=""/>${candidato.foto[i].legenda}</div>`;
+            }
+            else{
             fotosHtml += `<div class="d-1-image"><img src="img/${candidato.foto[i].url}" alt=""/>${candidato.foto[i].legenda}</div>`;
+            }
         }
     
     lateral.innerHTML = fotosHtml;
@@ -111,9 +116,11 @@ function confirma(){
     if(votoConfirmado){
         etapaAtual++;
         if(etapas[etapaAtual] !== undefined){
-            console.log('fim!')
+            comecarEtapa();
+        }
+        else{
+            document.querySelector('.tela').innerHTML = "<div class = 'avisoGigante pisca'>FIM!</div>";
+        }
         }
     }
-}
-
 comecarEtapa();
